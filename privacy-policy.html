@@ -1,92 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TraceFence - Privacy Policy</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #15202b; background: linear-gradient(180deg, #f8fbff 0%, #f3f7fb 100%); }
-        .container { max-width: 820px; margin: 0 auto; padding: 44px 24px 64px; }
-        .hero { background: rgba(255,255,255,0.9); border: 1px solid rgba(40,90,140,0.12); border-radius: 24px; padding: 28px 28px 24px; box-shadow: 0 18px 50px rgba(48, 88, 124, 0.08); }
-        h1 { font-size: 34px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 10px; color: #0b1720; }
-        .subtitle { font-size: 15px; color: #617487; margin-bottom: 18px; }
-        .badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: rgba(51, 144, 255, 0.10); color: #2468d6; font-size: 13px; font-weight: 700; margin-bottom: 16px; }
-        h2 { font-size: 21px; font-weight: 700; margin-top: 34px; margin-bottom: 12px; color: #12202f; }
-        h3 { font-size: 16px; font-weight: 700; margin-top: 18px; margin-bottom: 8px; color: #213447; }
-        p { margin-bottom: 12px; color: #304559; }
-        ul { margin: 8px 0 16px 20px; }
-        li { margin-bottom: 6px; color: #304559; }
-        table { width: 100%; border-collapse: collapse; margin: 16px 0; overflow: hidden; border-radius: 14px; }
-        th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #dfe8f1; font-size: 14px; vertical-align: top; }
-        th { background: #eef5fb; font-weight: 700; color: #203345; }
-        td { background: rgba(255,255,255,0.8); }
-        .callout { background: linear-gradient(135deg, rgba(66, 168, 255, 0.10), rgba(98, 226, 201, 0.10)); border: 1px solid rgba(66, 168, 255, 0.18); padding: 16px 18px; margin: 16px 0; border-radius: 18px; }
-        .footer { margin-top: 46px; padding-top: 18px; border-top: 1px solid #dfe8f1; font-size: 13px; color: #6b7c8d; }
-        a { color: #2468d6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        code { background: #eef3f8; padding: 2px 6px; border-radius: 6px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TraceFence - Privacy Policy</title>
+  <link rel="stylesheet" href="site.css" />
+  <script src="site.js" defer></script>
 </head>
 <body>
-<div class="container">
-  <div class="hero">
-    <div class="badge">TraceFence · Privacy-first local product</div>
-    <h1>Privacy Policy for TraceFence</h1>
-    <p class="subtitle">Last updated: June 13, 2026</p>
-    <p>Thank you for using TraceFence ("we", "our", or "the App"). This Privacy Policy explains how TraceFence handles information when you use the desktop app and its direct-download releases.</p>
-    <div class="callout">
-      <p><strong>Key Principle:</strong> TraceFence is designed to keep core monitoring and product data on your device. We do not need a hosted account or an analytics stack for the default experience.</p>
-    </div>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <p class="brand-title">TraceFence</p>
+          <p class="brand-subtitle"><span data-lang="en">Privacy Policy</span><span data-lang="zh">隐私政策</span></p>
+        </div>
+      </div>
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="product-overview.html">Docs</a>
+        <a href="release-and-distribution.html">Downloads</a>
+        <a class="active" href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-service.html">Terms</a>
+        <div class="lang-switch">
+          <button data-lang-button="zh" type="button">中文</button>
+          <button data-lang-button="en" type="button">EN</button>
+        </div>
+      </div>
+    </header>
 
-    <h2>1. Information We Process</h2>
-    <p>TraceFence is designed as a local-first application. The app may process the following data on your device:</p>
-    <table>
-      <tr><th>Data Type</th><th>Purpose</th><th>Stored On</th><th>Transmitted</th></tr>
-      <tr><td>Process information</td><td>Show local activity and review data</td><td>Your device</td><td>No, unless you opt into an external service</td></tr>
-      <tr><td>Session summaries</td><td>Render dashboard counts and charts</td><td>Your device</td><td>No</td></tr>
-      <tr><td>Token and project totals</td><td>Show usage trends and context</td><td>Your device</td><td>No</td></tr>
-      <tr><td>Cleanup or review records</td><td>Support maintenance workflows</td><td>Your device</td><td>No</td></tr>
-      <tr><td>Preferences and licensing metadata</td><td>Remember your settings and activation state</td><td>Your device</td><td>No</td></tr>
-    </table>
-
-    <h2>2. Optional External Services</h2>
-    <p>If you choose to connect an external provider, TraceFence will explain what data is sent, where it goes, and why it is needed. Optional services must remain opt-in.</p>
-    <p>We do not operate a mandatory cloud service for core product usage.</p>
-
-    <h2>3. Data Storage</h2>
-    <p>App data is stored locally on your device in the application support area used by the desktop build. The exact path may vary by platform and packaging format.</p>
-    <p>Stored data may include cache files, preferences, licensing metadata, and locally generated summaries. You can remove them by clearing the app data or uninstalling the app.</p>
-
-    <h2>4. Network Access</h2>
-    <p>TraceFence only uses network access when a feature explicitly requires it, such as downloading a release update, verifying a license, or connecting to an external provider you chose.</p>
-
-    <h2>5. Third-Party Services</h2>
-    <p>Any third-party provider you connect is responsible for its own privacy practices. We recommend reviewing their policies before using the integration.</p>
-
-    <h2>6. Your Choices</h2>
-    <ul>
-      <li>view your data inside the app</li>
-      <li>clear local caches and summaries</li>
-      <li>disconnect optional services</li>
-      <li>remove the app to delete local data</li>
-    </ul>
-
-    <h2>7. Children's Privacy</h2>
-    <p>TraceFence is not directed to children under 13 and is not designed to knowingly collect information from them.</p>
-
-    <h2>8. Changes</h2>
-    <p>We may update this Privacy Policy when the product or release model changes. The latest version will be published in this repository and can also be linked from the website.</p>
-
-    <h2>9. Contact</h2>
-    <p>If you have questions, contact us at <a href="mailto:76462245@qq.com">76462245@qq.com</a> or via the project repository at <a href="https://github.com/AI-Scarlett/TraceFence">https://github.com/AI-Scarlett/TraceFence</a>.</p>
-
-    <div class="footer">
-      <p>TraceFence by AI-Scarlett &copy; 2026.</p>
-      <p>This policy applies to TraceFence direct-download releases and repository-hosted documentation.</p>
-    </div>
+    <section class="section">
+      <h2 data-lang="en">Privacy Policy for TraceFence</h2>
+      <h2 data-lang="zh">TraceFence 隐私政策</h2>
+      <p data-lang="en">TraceFence is designed to keep core product data on the user's device whenever possible.</p>
+      <p data-lang="zh">TraceFence 的设计目标是尽量把核心产品数据保留在用户设备上。</p>
+      <ul class="list">
+        <li><span data-lang="en">local monitoring and summary data stays on device by default</span><span data-lang="zh">本地监控与摘要数据默认保留在本机</span></li>
+        <li><span data-lang="en">optional services must be opt-in</span><span data-lang="zh">可选服务必须由用户主动开启</span></li>
+        <li><span data-lang="en">license metadata may be stored locally if licensing is enabled</span><span data-lang="zh">如果启用授权，授权元数据可能会本地保存</span></li>
+        <li><span data-lang="en">the latest version of this policy lives in this repository</span><span data-lang="zh">本政策的最新版本会保存在这个仓库中</span></li>
+      </ul>
+      <p class="muted" data-lang="en">For the full legal page, this repository also exposes the HTML version at the root.</p>
+      <p class="muted" data-lang="zh">完整法律页面也会以根目录 HTML 的形式提供，方便官网和 GitHub Pages 直接引用。</p>
+    </section>
   </div>
-</div>
 </body>
 </html>
 

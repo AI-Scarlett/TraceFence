@@ -1,6 +1,6 @@
 # TraceFence Documentation
 
-This folder contains the public documentation set for TraceFence.
+This folder contains the source markdown for the public documentation set for TraceFence. The readable site lives in the HTML pages at the repository root.
 
 ## Documents
 
@@ -15,4 +15,3 @@ This folder contains the public documentation set for TraceFence.
 | [License Guide](support/license.md) | How licensing works for direct-download builds. |
 
 Root-level legal HTML files are kept for static hosting and repository-based distribution.
-

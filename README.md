@@ -2,7 +2,7 @@
 
 TraceFence is a local-first command center for understanding and controlling AI coding agents on your computer.
 
-This repository is the public home for TraceFence documentation, legal pages, and downloadable installers. The website can safely link here as the canonical download and support hub.
+This repository is the public home for TraceFence documentation, legal pages, and downloadable installers. The site is now published as plain HTML pages so it can be read comfortably from GitHub Pages or any static host.
 
 ## Downloads
 
@@ -22,9 +22,11 @@ Official macOS and Windows installers are published through this repository’s 
 
 ## Quick links
 
-- [Product overview](docs/product-overview.md)
-- [Agent monitoring model](docs/agent-monitoring.md)
-- [Release and distribution](docs/release-and-distribution.md)
+- [Home](index.html)
+- [Support center](support.html)
+- [Product overview](product-overview.html)
+- [Agent monitoring](agent-monitoring.html)
+- [Release and distribution](release-and-distribution.html)
 - [Privacy policy](privacy-policy.html)
 - [Terms of service](terms-of-service.html)
 
@@ -35,6 +37,10 @@ TraceFence is designed around local inspection and local control. Official insta
 ## Product links
 
 Website and purchase links can point here once the public release flow is live.
+
+## Language
+
+Every public page in this repository includes Chinese and English content with an in-page switcher.
 
 ## Brand notes
 
