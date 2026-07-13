@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TraceFence - Support</title>
+  <meta name="description" content="Technical support for TraceFence and TraceFence Sentinel." />
+  <title>TraceFence - Technical Support</title>
   <link rel="stylesheet" href="site.css" />
   <script src="site.js" defer></script>
 </head>
@@ -14,13 +15,12 @@
         <div class="brand-mark" aria-hidden="true"></div>
         <div>
           <p class="brand-title">TraceFence</p>
-          <p class="brand-subtitle"><span data-lang="en">Support</span><span data-lang="zh">技术支持</span></p>
+          <p class="brand-subtitle"><span data-lang="en">Technical Support</span><span data-lang="zh">技术支持</span></p>
         </div>
       </div>
       <div class="nav">
         <a href="index.html">Home</a>
-        <a href="product-overview.html">Docs</a>
-        <a href="release-and-distribution.html">Downloads</a>
+        <a class="active" href="support.html">Support</a>
         <a href="privacy-policy.html">Privacy</a>
         <a href="terms-of-service.html">Terms</a>
         <div class="lang-switch">
@@ -31,28 +31,56 @@
     </header>
 
     <section class="hero">
-      <div class="eyebrow"><span>●</span><span data-lang="en">Support center</span><span data-lang="zh">支持中心</span></div>
-      <h1 data-lang="en">Everything users need should be one click away.</h1>
-      <h1 data-lang="zh">用户需要的资料，最好一键就能找到。</h1>
-      <p data-lang="en">Use these pages as the canonical support surface for installation, licensing, FAQ, privacy, and legal details.</p>
-      <p data-lang="zh">这些页面就是安装、授权、FAQ、隐私与法律信息的正式支持入口。</p>
+      <div class="eyebrow"><span>●</span><span data-lang="en">TraceFence Sentinel support</span><span data-lang="zh">TraceFence Sentinel 支持中心</span></div>
+      <h1 data-lang="en">Pair once, then manage your Mac agents securely.</h1>
+      <h1 data-lang="zh">完成一次配对，安全管理 Mac 上的 Agent。</h1>
+      <p data-lang="en">TraceFence Sentinel requires a user-owned Mac running TraceFence Agent Core. There is no TraceFence cloud relay or web account.</p>
+      <p data-lang="zh">TraceFence Sentinel 需要用户本人拥有的 Mac，并运行 TraceFence Agent Core。产品不使用 TraceFence 云端中转，也不需要 Web 账号。</p>
+      <div class="hero-actions">
+        <a class="button" href="https://github.com/AI-Scarlett/TraceFence/issues/new"><span data-lang="en">Open a support request</span><span data-lang="zh">提交支持请求</span></a>
+        <a class="button" href="privacy-policy.html"><span data-lang="en">Privacy policy</span><span data-lang="zh">隐私政策</span></a>
+      </div>
     </section>
 
     <div class="grid">
       <section class="card span-6">
-        <h2><a href="install.html"><span data-lang="en">Installation guide</span><span data-lang="zh">安装指南</span></a></h2>
-        <p class="muted"><span data-lang="en">How to install the latest macOS or Windows build.</span><span data-lang="zh">如何安装最新版 macOS 或 Windows 安装包。</span></p>
+        <h2><span data-lang="en">Pair your Mac</span><span data-lang="zh">配对 Mac</span></h2>
+        <ol class="list">
+          <li><span data-lang="en">Open TraceFence on the Mac and select the iPhone connection icon.</span><span data-lang="zh">在 Mac 打开 TraceFence，点击左下角的 iPhone 连接图标。</span></li>
+          <li><span data-lang="en">Keep the pairing panel open and scan its QR code in Sentinel.</span><span data-lang="zh">保持配对弹窗打开，在 Sentinel 中扫描二维码。</span></li>
+          <li><span data-lang="en">Approve Face ID, Touch ID, or device passcode authentication.</span><span data-lang="zh">通过面容 ID、触控 ID 或设备密码认证。</span></li>
+        </ol>
       </section>
+
       <section class="card span-6">
-        <h2><a href="license.html"><span data-lang="en">License guide</span><span data-lang="zh">授权指南</span></a></h2>
-        <p class="muted"><span data-lang="en">Activation, trial, and support notes for direct-download builds.</span><span data-lang="zh">直下载版本的激活、试用和支持说明。</span></p>
+        <h2><span data-lang="en">Connect outside your Wi-Fi</span><span data-lang="zh">通过互联网连接</span></h2>
+        <p data-lang="en">Install Tailscale or another VPN on both devices and join the same private network. TraceFence will remember previously paired routes and retry them automatically. A sleeping, powered-off, or offline Mac cannot accept commands.</p>
+        <p data-lang="zh">在 Mac 和 iPhone 上安装 Tailscale 或其他 VPN，并加入同一个私有网络。TraceFence 会保存历史配对通道并自动重试。处于睡眠、关机或断网状态的 Mac 无法接收控制指令。</p>
       </section>
+
+      <section class="card span-6">
+        <h2><span data-lang="en">Sessions or projects are missing</span><span data-lang="zh">看不到会话或项目</span></h2>
+        <ul class="list">
+          <li><span data-lang="en">Confirm Agent Core shows Online in Sentinel Settings.</span><span data-lang="zh">确认 Sentinel 设置中的 Agent Core 显示在线。</span></li>
+          <li><span data-lang="en">Update Agent Core from the Mac before reinstalling either app.</span><span data-lang="zh">先在 Mac 更新 Agent Core，不必立即重装两端 App。</span></li>
+          <li><span data-lang="en">Only installed agents and recent displayable sessions appear.</span><span data-lang="zh">界面只展示已安装 Agent 和符合时间范围的有效会话。</span></li>
+        </ul>
+      </section>
+
+      <section class="card span-6">
+        <h2><span data-lang="en">Notifications and language</span><span data-lang="zh">通知与语言</span></h2>
+        <p data-lang="en">Enable notifications from Sentinel Settings. The iOS permission sheet is rendered by the operating system and follows the device language; all in-app notification controls follow the language selected in Sentinel.</p>
+        <p data-lang="zh">请从 Sentinel 设置中主动开启通知。iOS 系统授权框由操作系统绘制并跟随设备语言；App 内的通知设置和说明会跟随 Sentinel 选择的语言。</p>
+      </section>
+
       <section class="card span-12">
-        <h2><a href="faq.html"><span data-lang="en">FAQ</span><span data-lang="zh">常见问题</span></a></h2>
-        <p class="muted"><span data-lang="en">Download links, release notes, and where to get help.</span><span data-lang="zh">下载链接、更新说明以及获取帮助的方式。</span></p>
+        <h2><span data-lang="en">What to include in a support request</span><span data-lang="zh">提交支持请求时请附上</span></h2>
+        <p data-lang="en">Include the iOS build number, macOS TraceFence version, Agent Core version, affected agent name, connection type (local Wi-Fi or VPN), and a screenshot with tokens or private prompts hidden. Never post a pairing token publicly.</p>
+        <p data-lang="zh">请提供 iOS 构建号、macOS TraceFence 版本、Agent Core 版本、受影响的 Agent 名称、连接方式（局域网或 VPN）以及已遮盖令牌和私密提示词的截图。请勿公开发布配对令牌。</p>
       </section>
     </div>
+
+    <div class="footer"><span data-lang="en">Support is provided through the public TraceFence issue tracker.</span><span data-lang="zh">技术支持通过 TraceFence 公开 Issue 跟踪器提供。</span></div>
   </div>
 </body>
 </html>
-

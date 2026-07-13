@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for TraceFence and TraceFence Sentinel." />
   <title>TraceFence - Privacy Policy</title>
   <link rel="stylesheet" href="site.css" />
   <script src="site.js" defer></script>
@@ -19,8 +20,7 @@
       </div>
       <div class="nav">
         <a href="index.html">Home</a>
-        <a href="product-overview.html">Docs</a>
-        <a href="release-and-distribution.html">Downloads</a>
+        <a href="support.html">Support</a>
         <a class="active" href="privacy-policy.html">Privacy</a>
         <a href="terms-of-service.html">Terms</a>
         <div class="lang-switch">
@@ -30,21 +30,62 @@
       </div>
     </header>
 
-    <section class="section">
-      <h2 data-lang="en">Privacy Policy for TraceFence</h2>
-      <h2 data-lang="zh">TraceFence 隐私政策</h2>
-      <p data-lang="en">TraceFence is designed to keep core product data on the user's device whenever possible.</p>
-      <p data-lang="zh">TraceFence 的设计目标是尽量把核心产品数据保留在用户设备上。</p>
-      <ul class="list">
-        <li><span data-lang="en">local monitoring and summary data stays on device by default</span><span data-lang="zh">本地监控与摘要数据默认保留在本机</span></li>
-        <li><span data-lang="en">optional services must be opt-in</span><span data-lang="zh">可选服务必须由用户主动开启</span></li>
-        <li><span data-lang="en">license metadata may be stored locally if licensing is enabled</span><span data-lang="zh">如果启用授权，授权元数据可能会本地保存</span></li>
-        <li><span data-lang="en">the latest version of this policy lives in this repository</span><span data-lang="zh">本政策的最新版本会保存在这个仓库中</span></li>
-      </ul>
-      <p class="muted" data-lang="en">For the full legal page, this repository also exposes the HTML version at the root.</p>
-      <p class="muted" data-lang="zh">完整法律页面也会以根目录 HTML 的形式提供，方便官网和 GitHub Pages 直接引用。</p>
+    <section class="hero">
+      <div class="eyebrow"><span>●</span><span data-lang="en">Effective July 13, 2026</span><span data-lang="zh">生效日期：2026 年 7 月 13 日</span></div>
+      <h1 data-lang="en">Your agent data stays between your devices.</h1>
+      <h1 data-lang="zh">你的 Agent 数据，只在你的设备之间流转。</h1>
+      <p data-lang="en">TraceFence and TraceFence Sentinel are local-first tools for monitoring and controlling AI agent sessions on a Mac owned by the user.</p>
+      <p data-lang="zh">TraceFence 与 TraceFence Sentinel 是本地优先的工具，用于监控和控制用户本人 Mac 上的 AI Agent 会话。</p>
     </section>
+
+    <div class="grid">
+      <section class="card span-6">
+        <h2><span data-lang="en">Data we collect</span><span data-lang="zh">我们收集的数据</span></h2>
+        <p data-lang="en">We do not operate an account, analytics, advertising, tracking, or cloud relay service for TraceFence Sentinel. We do not receive your agent prompts, conversations, project paths, pairing tokens, biometric data, device identifiers, or usage history.</p>
+        <p data-lang="zh">TraceFence Sentinel 不提供账号、分析、广告、追踪或云端中转服务。我们不会接收你的 Agent 提示词、会话内容、项目路径、配对令牌、生物识别数据、设备标识符或使用历史。</p>
+      </section>
+
+      <section class="card span-6">
+        <h2><span data-lang="en">Direct device connection</span><span data-lang="zh">设备直连</span></h2>
+        <p data-lang="en">The iPhone app connects directly to the Mac endpoint you pair. Requests may travel over your local network, Tailscale tailnet, or another VPN that you configure. Those network providers have their own privacy terms.</p>
+        <p data-lang="zh">iPhone App 只会连接你配对的 Mac 地址。连接可能经过你的局域网、Tailscale Tailnet 或你自行配置的其他 VPN；这些网络服务适用其各自的隐私条款。</p>
+      </section>
+
+      <section class="card span-6">
+        <h2><span data-lang="en">Information stored on device</span><span data-lang="zh">设备本地保存的信息</span></h2>
+        <ul class="list">
+          <li><span data-lang="en">paired Mac name, addresses, and encrypted access token</span><span data-lang="zh">已配对 Mac 的名称、地址和加密访问令牌</span></li>
+          <li><span data-lang="en">language, notification, connection, and security preferences</span><span data-lang="zh">语言、通知、连接和安全偏好</span></li>
+          <li><span data-lang="en">short-lived session summaries needed to render the control interface</span><span data-lang="zh">用于展示控制界面的短期会话摘要</span></li>
+        </ul>
+        <p class="muted"><span data-lang="en">Removing a paired Mac in Settings deletes its saved connection data from the iPhone.</span><span data-lang="zh">在设置中移除已配对 Mac，会从 iPhone 删除该连接资料。</span></p>
+      </section>
+
+      <section class="card span-6">
+        <h2><span data-lang="en">Permissions</span><span data-lang="zh">系统权限</span></h2>
+        <ul class="list">
+          <li><span data-lang="en">Camera: scan the pairing QR code shown on your Mac.</span><span data-lang="zh">相机：扫描 Mac 显示的配对二维码。</span></li>
+          <li><span data-lang="en">Local Network: discover and connect to your Mac.</span><span data-lang="zh">本地网络：发现并连接你的 Mac。</span></li>
+          <li><span data-lang="en">Face ID, Touch ID, or passcode: protect pairing and remote controls. Apple performs authentication; TraceFence never receives biometric data.</span><span data-lang="zh">面容 ID、触控 ID 或设备密码：保护配对和远程控制。认证由 Apple 完成，TraceFence 不会获得生物识别数据。</span></li>
+          <li><span data-lang="en">Notifications: alert you to approvals, agent replies, and task completion while the app can refresh.</span><span data-lang="zh">通知：在 App 可以刷新时提醒权限审批、Agent 回复和任务完成。</span></li>
+        </ul>
+      </section>
+
+      <section class="card span-6">
+        <h2><span data-lang="en">Security and retention</span><span data-lang="zh">安全与保留期限</span></h2>
+        <p data-lang="en">Pairing tokens are stored in the iOS Keychain and sensitive actions require device authentication. Session data remains on your devices and is retained only as needed for local history and monitoring. You control deletion by removing the pairing, clearing app data, or uninstalling the app.</p>
+        <p data-lang="zh">配对令牌保存在 iOS 钥匙串中，敏感操作需要设备认证。会话数据保留在你的设备上，仅按本地历史和监控需要保存。你可以通过移除配对、清除 App 数据或卸载 App 完成删除。</p>
+      </section>
+
+      <section class="card span-6">
+        <h2><span data-lang="en">Children, changes, and contact</span><span data-lang="zh">儿童、政策变更与联系</span></h2>
+        <p data-lang="en">TraceFence is a developer productivity tool and is not directed to children under 13. Material policy changes will be published on this page with a new effective date.</p>
+        <p data-lang="zh">TraceFence 是开发者生产力工具，不面向 13 岁以下儿童。重要政策变更会在本页面发布，并更新生效日期。</p>
+        <p><a class="button" href="https://github.com/AI-Scarlett/TraceFence/issues/new"><span data-lang="en">Contact privacy support</span><span data-lang="zh">联系隐私支持</span></a></p>
+      </section>
+    </div>
+
+    <div class="footer"><span data-lang="en">Developer: AI-Scarlett · TraceFence</span><span data-lang="zh">开发者：AI-Scarlett · TraceFence</span></div>
   </div>
 </body>
 </html>
-
