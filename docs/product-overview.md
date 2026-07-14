@@ -1,49 +1,46 @@
 # TraceFence Product Overview
 
-TraceFence is a local-first desktop utility for observing AI agent activity, reviewing system changes, and helping users keep their Mac or Windows machine understandable.
+TraceFence is a local-first control center for AI coding agents running on a Mac. Its iPhone companion, TraceFence Sentinel, provides a mobile surface for supported approvals, session controls, alerts, and agent status.
 
-## What TraceFence focuses on
+## Primary workflow
 
-- session and activity visibility
-- token and context summaries
-- project and workspace awareness
-- local process and command review
-- cleanup and maintenance workflows
-- direct-download distribution with GitHub Releases
+1. TraceFence discovers supported local agents and negotiates each adapter's capabilities.
+2. The user pairs TraceFence Sentinel with the Mac app.
+3. The iPhone connects over LAN, Tailscale, VPN, or another user-operated tunnel.
+4. Supported requests and session actions can be reviewed from the phone.
+5. Audit and TokenScope data remain on the Mac by default.
+
+TraceFence does not operate a cloud relay for agent traffic. The user owns and configures the network path between iPhone and Mac.
+
+## Core capabilities
+
+### Remote approvals
+
+Supported integrations can surface a pending action with its command, working directory, and reason. The user can approve, deny, or provide replacement guidance when the adapter exposes that workflow.
+
+### Session lifecycle control
+
+Depending on the agent adapter, TraceFence Sentinel can launch, relaunch, interrupt, resume, or terminate a session. Read-only integrations remain visible without presenting non-functional controls.
+
+### Multi-agent command center
+
+TraceFence brings session state, local activity, project context, and token usage together across Codex, Claude Code, Cursor Agent, Gemini CLI, Grok CLI, Qwen Code, OpenCode, MiniMax Code, OpenClaw, and additional adapters.
+
+### Local audit and usage analytics
+
+Agent Guard records supported local operations for review, while TokenScope summarizes usage and context information on the Mac.
 
 ## Product principles
 
-1. Keep the core experience local and fast.
-2. Avoid forcing users into a hosted cloud account.
-3. Make important data obvious instead of decorative.
-4. Support a polished visual system across light and dark modes.
-5. Keep monitoring, approval, and review workflows easy to understand.
+1. Keep agent data local by default.
+2. Never display a control that the selected adapter cannot execute.
+3. Make approvals understandable before a user acts.
+4. Let users choose their own remote-access network.
+5. Ship direct-download fixes quickly through GitHub Releases.
 
-## Core modules
+## Availability
 
-### Overview
-
-The overview page should answer three questions quickly:
-
-- what is happening now
-- how much activity has accumulated
-- what the user should inspect next
-
-### Agent monitoring
-
-TraceFence can summarize local agent sessions, active processes, command approvals, and related metadata.
-
-### Cleanup and maintenance
-
-TraceFence also covers local review and cleanup workflows so users can keep projects, caches, and generated files under control.
-
-### Licensing and distribution
-
-The direct-download build uses GitHub Releases for installers and documentation links. This repo is the canonical public surface for downloads, legal pages, and support material.
-
-## Supported users
-
-- individual developers who run agent tooling locally
-- teams that need local observability without a hosted dashboard
-- users who prefer a direct-download product rather than an App Store-only build
-
+- macOS local build: [GitHub Releases](https://github.com/AI-Scarlett/TraceFence/releases/latest)
+- iOS companion: [TraceFence Sentinel on TestFlight](https://testflight.apple.com/join/yZTXmaJ8)
+- Website: [tracefence.com](https://tracefence.com/)
+- Standard: US$9.99 monthly or US$79.99 annually

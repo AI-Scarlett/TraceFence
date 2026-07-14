@@ -11,7 +11,7 @@ This folder contains the source markdown for the public documentation set for Tr
 | [Release and Distribution](release-and-distribution.md) | Build, packaging, GitHub Releases, and website linking guidance. |
 | [Privacy and Data](privacy-and-data.md) | What TraceFence stores, what stays local, and how optional integrations work. |
 | [Support FAQ](support/faq.md) | Common installation, update, and licensing questions. |
-| [Installation Guide](support/install.md) | How users install TraceFence on macOS and Windows. |
+| [Installation Guide](support/install.md) | How users install TraceFence on macOS and pair TraceFence Sentinel on iPhone. |
 | [License Guide](support/license.md) | How licensing works for direct-download builds. |
 
 Root-level legal HTML files are kept for static hosting and repository-based distribution.

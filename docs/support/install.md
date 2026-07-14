@@ -1,22 +1,55 @@
 # Installation Guide
 
-## macOS
+## Requirements
 
-1. Open the latest release on GitHub.
-2. Download the `.dmg` or `.zip` asset for TraceFence.
-3. Open the installer and drag the app into `Applications` if needed.
-4. Launch TraceFence and complete any first-run permissions.
+- Apple Silicon Mac
+- macOS 13 or later
+- iPhone for TraceFence Sentinel remote control
+- LAN, Tailscale, VPN, or another user-operated tunnel for remote access
 
-## Windows
+## Install the Mac app
 
-1. Open the latest release on GitHub.
-2. Download the Windows installer asset.
-3. Run the installer and follow the prompts.
-4. Launch TraceFence from the Start menu or desktop shortcut.
+### GitHub Releases (recommended)
 
-## Notes
+1. Open the [latest TraceFence release](https://github.com/AI-Scarlett/TraceFence/releases/latest).
+2. Download `TraceFence-<version>-arm64.dmg`.
+3. Open the DMG and drag `TraceFence.app` to Applications.
+4. Launch TraceFence and complete the requested first-run permissions.
 
-- If the app is blocked by the OS, verify the downloaded package is the latest release asset.
-- Keep the release version visible in your support reply or bug report.
-- Use the release checksum if one is provided.
+The app is signed with a Developer ID and notarized by Apple. A SHA-256 file is published beside the DMG.
 
+### Homebrew
+
+```bash
+brew tap AI-Scarlett/tap
+# Homebrew 6 and later:
+brew trust --cask AI-Scarlett/tap/tracefence
+brew install --cask tracefence
+```
+
+Homebrew versions before 6 can skip the `brew trust` line.
+
+To update later:
+
+```bash
+brew update
+brew upgrade --cask tracefence
+```
+
+## Install the iPhone companion
+
+1. Join [TraceFence Sentinel on TestFlight](https://testflight.apple.com/join/yZTXmaJ8).
+2. Install Sentinel on the iPhone.
+3. Enable the local control API in TraceFence on the Mac.
+4. Import the pairing information into Sentinel.
+5. Connect through LAN, Tailscale, VPN, or your own tunnel.
+
+TraceFence does not provide a hosted relay. Confirm that the iPhone can reach the paired Mac through the network path you selected.
+
+## Troubleshooting
+
+- Confirm that both apps are current.
+- Confirm that the agent is installed and runnable on the Mac.
+- Check whether TraceFence reports the adapter as controllable or read-only.
+- For remote access, verify the Mac address and port from the iPhone network.
+- Include the TraceFence version, macOS version, agent name, and connection type in a [support issue](https://github.com/AI-Scarlett/TraceFence/issues).

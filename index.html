@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TraceFence</title>
+  <meta name="description" content="TraceFence lets you control Codex, Claude Code, Cursor, Gemini CLI, and other Mac AI agents from iPhone over your own network." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:title" content="TraceFence - Control Mac AI agents from iPhone" />
+  <meta property="og:description" content="Approve, launch, interrupt, resume, and monitor supported Mac agents over LAN, Tailscale, VPN, or your own tunnel." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/AI-Scarlett/TraceFence/main/assets/hero-mac-ios.png" />
+  <title>TraceFence - Control Mac AI Agents from iPhone</title>
   <link rel="stylesheet" href="site.css" />
   <script src="site.js" defer></script>
 </head>
@@ -15,8 +20,8 @@
         <div>
           <p class="brand-title">TraceFence</p>
           <p class="brand-subtitle">
-            <span data-lang="en">Documentation, downloads, and legal pages</span>
-            <span data-lang="zh">文档、下载与法律页面</span>
+            <span data-lang="en">Mac agent control from iPhone</span>
+            <span data-lang="zh">用 iPhone 控制 Mac Agent</span>
           </p>
         </div>
       </div>
@@ -25,7 +30,7 @@
         <a href="product-overview.html">Docs</a>
         <a href="release-and-distribution.html">Downloads</a>
         <a href="privacy-policy.html">Privacy</a>
-        <a href="terms-of-service.html">Terms</a>
+        <a href="support.html">Support</a>
         <div class="lang-switch">
           <button data-lang-button="zh" type="button">中文</button>
           <button data-lang-button="en" type="button">EN</button>
@@ -33,85 +38,76 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="eyebrow">
-        <span>●</span>
-        <span data-lang="en">Public release hub</span>
-        <span data-lang="zh">公开发布中心</span>
-      </div>
-      <h1 data-lang="en">A cleaner home for TraceFence docs and installers.</h1>
-      <h1 data-lang="zh">TraceFence 的文档和安装包，现在有一个更好读的主页。</h1>
-      <p data-lang="en">
-        This repository is the public site for direct downloads, support pages, privacy policy, terms of service,
-        and product docs. It is designed to work well as a GitHub Pages site.
-      </p>
-      <p data-lang="zh">
-        这个仓库会作为 TraceFence 的公开站点，承载下载、技术支持、隐私政策、服务条款和产品文档，
-        也可以直接作为 GitHub Pages 站点使用。
-      </p>
-      <div class="hero-actions">
-        <a class="button" href="release-and-distribution.html">
-          <span data-lang="en">View downloads</span>
-          <span data-lang="zh">查看下载</span>
-        </a>
-        <a class="button" href="support.html">
-          <span data-lang="en">Support center</span>
-          <span data-lang="zh">支持中心</span>
-        </a>
-        <a class="button" href="product-overview.html">
-          <span data-lang="en">Read docs</span>
-          <span data-lang="zh">阅读文档</span>
-        </a>
-      </div>
-    </section>
-
-    <div class="grid">
-      <section class="card span-6">
-        <h2>
-          <span data-lang="en">What’s here</span>
-          <span data-lang="zh">这里包含什么</span>
-        </h2>
-        <ul class="list">
-          <li>
-            <span data-lang="en">Product overview and monitoring model</span>
-            <span data-lang="zh">产品概览与监控模型</span>
-          </li>
-          <li>
-            <span data-lang="en">Release and distribution guidance</span>
-            <span data-lang="zh">发布与分发说明</span>
-          </li>
-          <li>
-            <span data-lang="en">Privacy policy and terms of service</span>
-            <span data-lang="zh">隐私政策与服务条款</span>
-          </li>
-          <li>
-            <span data-lang="en">Installation, licensing, and FAQ pages</span>
-            <span data-lang="zh">安装、授权和 FAQ 页面</span>
-          </li>
-        </ul>
-      </section>
-
-      <section class="card span-6">
-        <h2>
-          <span data-lang="en">Release posture</span>
-          <span data-lang="zh">发布方式</span>
-        </h2>
-        <div class="pill-row">
-          <span class="pill">GitHub Releases</span>
-          <span class="pill">macOS .dmg / .zip</span>
-          <span class="pill">Windows .exe / .msi</span>
-          <span class="pill">Bilingual pages</span>
+    <main>
+      <section class="hero">
+        <div class="eyebrow">
+          <span>●</span>
+          <span data-lang="en">Local-first Mac + iPhone control</span>
+          <span data-lang="zh">本地优先的 Mac + iPhone 控制</span>
         </div>
-        <p class="muted" style="margin-top: 14px;">
-          <span data-lang="en">The website should link to this repository so downloads, docs, and legal pages stay in one place.</span>
-          <span data-lang="zh">官网可以直接链接到这个仓库，这样下载、文档和法律页面就都在一个地方。</span>
-        </p>
+        <h1 data-lang="en">Control your Mac AI agents from iPhone.</h1>
+        <h1 data-lang="zh">用 iPhone 控制 Mac 上的 AI Agent。</h1>
+        <p data-lang="en">Approve requests, launch or resume sessions, interrupt unsafe runs, and supervise Codex, Claude Code, Cursor, Gemini CLI, and other supported agents over a network you control.</p>
+        <p data-lang="zh">通过你自己的网络审批请求、启动或继续会话、中断危险运行，并管理 Codex、Claude Code、Cursor、Gemini CLI 等受支持的 Agent。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/AI-Scarlett/TraceFence/releases/latest">
+            <span data-lang="en">Download Mac build</span>
+            <span data-lang="zh">下载 Mac 本地版</span>
+          </a>
+          <a class="button" href="https://testflight.apple.com/join/yZTXmaJ8">
+            <span data-lang="en">Join iOS TestFlight</span>
+            <span data-lang="zh">加入 iOS TestFlight</span>
+          </a>
+          <a class="button" href="https://tracefence.com/#pricing">
+            <span data-lang="en">View Standard pricing</span>
+            <span data-lang="zh">查看 Standard 价格</span>
+          </a>
+        </div>
+        <img class="hero-media" src="assets/hero-mac-ios.png" width="1800" height="1200" alt="TraceFence Mac control center paired with TraceFence Sentinel on iPhone" />
       </section>
-    </div>
+
+      <div class="grid">
+        <section class="card span-6">
+          <h2><span data-lang="en">One control loop</span><span data-lang="zh">一个完整控制闭环</span></h2>
+          <ul class="list">
+            <li><span data-lang="en">Approve or deny supported agent requests from iPhone</span><span data-lang="zh">在 iPhone 上批准或拒绝受支持的 Agent 请求</span></li>
+            <li><span data-lang="en">Launch, relaunch, interrupt, resume, or terminate when available</span><span data-lang="zh">在能力可用时启动、重启、中断、继续或终止会话</span></li>
+            <li><span data-lang="en">Review session context, TokenScope usage, and local audit events</span><span data-lang="zh">查看会话上下文、TokenScope 用量和本地审计事件</span></li>
+          </ul>
+        </section>
+
+        <section class="card span-6">
+          <h2><span data-lang="en">Your network, no TraceFence relay</span><span data-lang="zh">你的网络，不经过 TraceFence 中转</span></h2>
+          <p class="muted"><span data-lang="en">TraceFence Sentinel connects directly to the paired Mac over LAN, Tailscale, VPN, or another tunnel you operate.</span><span data-lang="zh">TraceFence Sentinel 通过局域网、Tailscale、VPN 或你自己的隧道直连配对 Mac。</span></p>
+          <div class="pill-row">
+            <span class="pill">LAN</span>
+            <span class="pill">Tailscale</span>
+            <span class="pill">VPN</span>
+            <span class="pill">Local-first</span>
+          </div>
+        </section>
+
+        <section class="card span-12">
+          <h2><span data-lang="en">Supported agent families</span><span data-lang="zh">支持的 Agent 家族</span></h2>
+          <div class="pill-row">
+            <span class="pill">Codex</span>
+            <span class="pill">Claude Code</span>
+            <span class="pill">Cursor Agent</span>
+            <span class="pill">Gemini CLI</span>
+            <span class="pill">Grok CLI</span>
+            <span class="pill">Qwen Code</span>
+            <span class="pill">OpenCode</span>
+            <span class="pill">MiniMax Code</span>
+            <span class="pill">OpenClaw</span>
+          </div>
+          <p class="muted supporting-copy"><span data-lang="en">Control depth depends on the local CLI, hook, and adapter. Display-only integrations remain read-only.</span><span data-lang="zh">具体控制能力取决于本机 CLI、hook 和 adapter；仅可读取的集成会保持只读。</span></p>
+        </section>
+      </div>
+    </main>
 
     <div class="footer">
-      <span data-lang="en">TraceFence public release hub.</span>
-      <span data-lang="zh">TraceFence 公开发布中心。</span>
+      <span data-lang="en">TraceFence · macOS local build · TraceFence Sentinel for iPhone · US$9.99/month or US$79.99/year</span>
+      <span data-lang="zh">TraceFence · macOS 本地版 · iPhone 版 TraceFence Sentinel · 每月 US$9.99 或每年 US$79.99</span>
     </div>
   </div>
 </body>

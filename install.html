@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,12 +35,18 @@
       <h2 data-lang="zh">安装 TraceFence</h2>
       <ol class="list">
         <li><span data-lang="en">Open the latest GitHub Release.</span><span data-lang="zh">打开最新的 GitHub Release。</span></li>
-        <li><span data-lang="en">Download the macOS or Windows installer.</span><span data-lang="zh">下载 macOS 或 Windows 安装包。</span></li>
+        <li><span data-lang="en">Download the latest Apple Silicon DMG.</span><span data-lang="zh">下载最新的 Apple Silicon DMG。</span></li>
         <li><span data-lang="en">Open the package and complete the OS prompts.</span><span data-lang="zh">打开安装包并完成系统提示。</span></li>
-        <li><span data-lang="en">Launch TraceFence and allow any first-run permissions.</span><span data-lang="zh">启动 TraceFence，并允许首次运行需要的权限。</span></li>
+        <li><span data-lang="en">Launch TraceFence and complete the first-run permissions.</span><span data-lang="zh">启动 TraceFence，并完成首次运行权限设置。</span></li>
+        <li><span data-lang="en">Install TraceFence Sentinel from TestFlight and pair it with the Mac.</span><span data-lang="zh">通过 TestFlight 安装 TraceFence Sentinel，并与 Mac 配对。</span></li>
       </ol>
+      <h3 data-lang="en">Homebrew</h3>
+      <h3 data-lang="zh">Homebrew 安装</h3>
+      <pre><code>brew tap AI-Scarlett/tap
+brew trust --cask AI-Scarlett/tap/tracefence
+brew install --cask tracefence</code></pre>
+      <p class="muted"><span data-lang="en">Homebrew versions before 6 can skip the trust command.</span><span data-lang="zh">Homebrew 6 之前的版本可以跳过信任命令。</span></p>
     </section>
   </div>
 </body>
 </html>
-

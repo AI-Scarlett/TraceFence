@@ -2,19 +2,19 @@
 
 ## Where do I download TraceFence?
 
-Use the [GitHub Releases page](https://github.com/AI-Scarlett/TraceFence/releases).
+Use the [latest GitHub Release](https://github.com/AI-Scarlett/TraceFence/releases/latest) or the AI-Scarlett Homebrew tap.
 
 ## Where should I report issues?
 
 Open an issue in this repository or contact the support email listed in the legal pages.
 
-## Can this repo host installers?
+## Is there an iPhone client?
 
-Yes. Mac and Windows installers can be attached as GitHub Release assets.
+Yes. [TraceFence Sentinel is available through TestFlight](https://testflight.apple.com/join/yZTXmaJ8).
 
 ## Does the product need a cloud account?
 
-Not for the core local experience. Optional services should stay opt-in.
+No TraceFence cloud account or hosted relay is required for the local control path. Connect the iPhone to the paired Mac through LAN, Tailscale, VPN, or another tunnel you operate.
 
 ## What should the website link to?
 
@@ -24,4 +24,3 @@ The website should link to this repository for:
 - documentation
 - privacy policy
 - terms of service
-

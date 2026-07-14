@@ -1,46 +1,41 @@
 # Release and Distribution
 
-TraceFence uses GitHub Releases as the public distribution channel for installers and documentation bundles.
+GitHub Releases is the recommended distribution channel for the TraceFence macOS local build. It receives product updates and bug fixes before the Mac App Store build.
 
-## Branches
+## Public release assets
 
-- `dev` is the working branch for implementation.
-- `main` should reflect the latest verified public release materials.
-- release assets should be published only after the package is verified locally.
+Each current macOS release should include:
 
-## Release assets
+- `TraceFence-<version>-arm64.dmg`
+- `TraceFence-<version>-arm64.dmg.sha256`
+- `tracefence-update.json`
+- release notes describing user-visible changes
 
-Publish the following to GitHub Releases when a build is ready:
+The DMG must be Developer ID signed, notarized, and stapled before upload.
 
-- macOS `.dmg` or `.zip`
-- Windows `.exe` or `.msi`
-- release notes
-- checksum file if available
+## Homebrew tap
 
-## Suggested versioning
+The public tap installs the same notarized DMG published on GitHub Releases:
 
-- use semantic versioning for public builds
-- keep the direct-download line independent from App Store versioning if both exist
-- record platform-specific notes when macOS and Windows packaging differ
+```bash
+brew tap AI-Scarlett/tap
+brew trust --cask AI-Scarlett/tap/tracefence
+brew install --cask tracefence
+```
 
-## Website linking
+The cask version and SHA-256 must match the current release asset.
 
-The public website can point users to:
+## iOS distribution
 
-- this repository for documentation and legal pages
-- the Releases tab for installers
-- the latest release note for changelog details
+TraceFence Sentinel is distributed through [TestFlight](https://testflight.apple.com/join/yZTXmaJ8). The iOS app pairs directly with the Mac app and does not use a TraceFence-hosted agent relay.
 
-## Build verification
+## Verification checklist
 
-Before publishing a release, verify:
+Before publishing a release:
 
-1. the installer launches and installs correctly
-2. the app name, icon, and bundle identifiers match the TraceFence brand
-3. the release notes describe the exact build
-4. legal pages are present in the repo and still match the product name
-
-## Direct-download posture
-
-The direct-download build should be treated as a product surface of its own. Its release process should not depend on App Store packaging, App Store metadata, or App Store review timing.
-
+1. Install the DMG on a clean macOS account or test volume.
+2. Verify the Developer ID signature, notarization ticket, and Gatekeeper assessment.
+3. Verify the published SHA-256 against the local DMG.
+4. Confirm the release notes and update manifest identify the same version.
+5. Test a Mac-to-iPhone pairing and at least one supported agent action.
+6. Update the Homebrew cask after the GitHub asset is available.
