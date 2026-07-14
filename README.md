@@ -7,7 +7,7 @@
 <p align="center"><strong>Control Codex, Claude Code, Cursor, Gemini CLI, and other Mac AI agents from your iPhone over your own network.</strong></p>
 
 <p align="center">
-  <a href="https://tracefence.com/">Website</a> ·
+  <a href="https://tracefence.com/?utm_source=github&utm_medium=repository&utm_campaign=tracefence_evergreen&utm_content=readme">Website</a> ·
   <a href="https://tracefence.com/go/mac-local">Download for Mac</a> ·
   <a href="https://tracefence.com/go/ios-testflight">iOS TestFlight</a> ·
   <a href="https://tracefence.com/go/standard-monthly">Standard subscription</a> ·
