@@ -18,6 +18,17 @@
 
 The app is signed with a Developer ID and notarized by Apple. A SHA-256 file is published beside the DMG.
 
+## Install and manage plugins
+
+1. Install TraceFence 1.2.1 or later.
+2. Open **Settings → Plugin Center**.
+3. Use **Discover** to search or filter the signed catalog.
+4. Open a plugin to review its version, minimum macOS and TraceFence versions, PluginKit compatibility, permissions, and download size.
+5. Purchase or redeem access when required, then choose **Install**.
+6. Open installed plugins from **Library**. Available independent updates appear in **Updates**.
+
+Plugins can be enabled, disabled, updated, rolled back to the retained previous version, or uninstalled without changing the TraceFence host version. Uninstalling a plugin preserves its data by default unless the user explicitly removes that data.
+
 ### Homebrew
 
 ```bash

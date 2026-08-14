@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse independently versioned apps for the TraceFence Plugin Center." />
+  <title>TraceFence Plugin Center</title>
+  <link rel="stylesheet" href="site.css" />
+  <script src="site.js" defer></script>
+  <script src="plugins.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <p class="brand-title">TraceFence</p>
+          <p class="brand-subtitle"><span data-lang="en">Plugin Center</span><span data-lang="zh">插件中心</span></p>
+        </div>
+      </div>
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="product-overview.html">Docs</a>
+        <a class="active" href="plugins.html">Plugins</a>
+        <a href="release-and-distribution.html">Downloads</a>
+        <a href="support.html">Support</a>
+        <div class="lang-switch">
+          <button data-lang-button="zh" type="button">中文</button>
+          <button data-lang-button="en" type="button">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero plugin-hero">
+        <div class="eyebrow"><span>●</span><span data-lang="en">Apps for your TraceFence system</span><span data-lang="zh">安装到 TraceFence 系统里的应用</span></div>
+        <h1 data-lang="en">Install the tools you need. Update them independently.</h1>
+        <h1 data-lang="zh">需要什么装什么，插件独立升级。</h1>
+        <p data-lang="en">TraceFence 1.2.1 introduces a signed Plugin Center with 45 independently versioned apps. Plugin updates do not require a TraceFence host update.</p>
+        <p data-lang="zh">TraceFence 1.2.1 提供签名插件中心，首批 45 个插件拥有独立版本和更新周期；升级插件不需要升级 TraceFence 主程序。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/AI-Scarlett/TraceFence/releases/latest"><span data-lang="en">Download TraceFence</span><span data-lang="zh">下载 TraceFence</span></a>
+          <a class="button" href="#catalog"><span data-lang="en">Browse all plugins</span><span data-lang="zh">浏览全部插件</span></a>
+        </div>
+      </section>
+
+      <section class="section plugin-principles">
+        <div>
+          <strong><span data-lang="en">Independent versions</span><span data-lang="zh">版本独立</span></strong>
+          <p class="muted"><span data-lang="en">Each plugin owns its version, update and rollback history.</span><span data-lang="zh">每个插件拥有自己的版本、更新与回滚记录。</span></p>
+        </div>
+        <div>
+          <strong><span data-lang="en">Owned distribution</span><span data-lang="zh">自主分发</span></strong>
+          <p class="muted"><span data-lang="en">Packages are served from the official TraceFence repository.</span><span data-lang="zh">插件包从 TraceFence 官方仓库分发，不依赖上游仓库长期存在。</span></p>
+        </div>
+        <div>
+          <strong><span data-lang="en">Safe lifecycle</span><span data-lang="zh">安全生命周期</span></strong>
+          <p class="muted"><span data-lang="en">Review permissions, then install, enable, disable, update, roll back or uninstall.</span><span data-lang="zh">先查看权限，再安装、启用、停用、更新、回滚或卸载。</span></p>
+        </div>
+      </section>
+
+      <section class="section" id="catalog">
+        <div class="catalog-heading">
+          <div>
+            <h2><span data-lang="en">Plugin catalog</span><span data-lang="zh">插件目录</span></h2>
+            <p class="muted" id="plugin-status"><span data-lang="en">Loading signed catalog…</span><span data-lang="zh">正在载入签名目录…</span></p>
+          </div>
+          <div class="catalog-controls">
+            <label>
+              <span class="visually-hidden">Search</span>
+              <input id="plugin-search" type="search" placeholder="Search plugins" autocomplete="off" />
+            </label>
+            <label>
+              <span class="visually-hidden">Category</span>
+              <select id="plugin-category"><option value="">All categories</option></select>
+            </label>
+          </div>
+        </div>
+        <div class="plugin-grid" id="plugin-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <div class="footer">
+      <span data-lang="en">Plugin purchases and entitlement checks happen inside TraceFence. Package integrity is verified before installation.</span>
+      <span data-lang="zh">插件购买和权益校验在 TraceFence 内完成，安装前会校验包完整性和签名。</span>
+    </div>
+  </div>
+</body>
+</html>

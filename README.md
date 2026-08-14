@@ -28,6 +28,17 @@ This repository is the official public home for signed macOS installers, checksu
 - **Multi-agent visibility**: keep supported agent sessions, status, context, and token usage in one Mac control center.
 - **Local-first networking**: connect over LAN, Tailscale, VPN, or a tunnel you operate. TraceFence does not provide a cloud relay for agent traffic.
 - **Local audit and analytics**: review Agent Guard events and TokenScope usage on your Mac.
+- **Independent Plugin Center**: browse 45 signed plugins, review permissions, and install, enable, disable, update, roll back, or uninstall each plugin independently from the TraceFence host version.
+
+## Plugin Center
+
+TraceFence is the host system; plugins behave like independently versioned apps inside it. TraceFence 1.2.1 introduces the first 45 package plugins. Plugin releases and downloads are owned by this repository, so installed and future versions do not depend on the upstream source repository remaining available.
+
+- Browse the public catalog: [TraceFence Plugin Center](https://tracefence.com/plugins.html)
+- Every package has its own version and immutable GitHub Release URL.
+- TraceFence verifies the catalog signature, package SHA-256, Developer ID team, manifest, PluginKit ABI, macOS requirement, and declared permissions before installation.
+- Plugin data stays separate from executable versions, and one previous version is retained for rollback.
+- TraceFence Standard includes access to the 45 package plugins; plugin purchases and entitlement checks happen inside the app.
 
 ## Supported agents
 

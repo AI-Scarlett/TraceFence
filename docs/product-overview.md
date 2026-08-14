@@ -30,6 +30,12 @@ TraceFence brings session state, local activity, project context, and token usag
 
 Agent Guard records supported local operations for review, while TokenScope summarizes usage and context information on the Mac.
 
+### Independent Plugin Center
+
+TraceFence acts as the host system and marketplace. Package plugins act as independent apps with their own versions and release cycles. The host provides catalog trust, entitlement checks, package installation, runtime isolation, unified presentation, data directories, updates, rollback, and removal. A plugin can update without requiring a TraceFence update as long as its declared PluginKit ABI and minimum host version remain compatible.
+
+The first catalog contains 45 signed plugins. Packages are distributed from the official TraceFence repository and do not rely on the upstream source repository remaining available. Browse them at [tracefence.com/plugins.html](https://tracefence.com/plugins.html).
+
 ## Product principles
 
 1. Keep agent data local by default.
@@ -41,6 +47,7 @@ Agent Guard records supported local operations for review, while TokenScope summ
 ## Availability
 
 - macOS local build: [GitHub Releases](https://github.com/AI-Scarlett/TraceFence/releases/latest)
+- Plugin catalog: [TraceFence Plugin Center](https://tracefence.com/plugins.html)
 - iOS companion: [TraceFence Sentinel on TestFlight](https://testflight.apple.com/join/yZTXmaJ8)
 - Website: [tracefence.com](https://tracefence.com/)
 - Standard: US$9.99 monthly or US$79.99 annually
