@@ -32,7 +32,7 @@ This repository is the official public home for signed macOS installers, checksu
 
 ## Plugin Center
 
-TraceFence is the host system; plugins behave like independently versioned apps inside it. TraceFence 1.2.2 adds a My Plugins workspace and menu-bar quick plugins for the first 45 package plugins. Plugin releases and downloads are owned by this repository, so installed and future versions do not depend on the upstream source repository remaining available.
+TraceFence is the host system; plugins behave like independently versioned apps inside it. TraceFence 1.2.3 gives the first 45 package plugins deliberate desktop defaults and limits the menu bar to compact quick controls or status summaries. Plugin releases and downloads are owned by this repository, so installed and future versions do not depend on the upstream source repository remaining available.
 
 - Browse the public catalog: [TraceFence Plugin Center](https://tracefence.com/plugins.html)
 - Every package has its own version and immutable GitHub Release URL.
