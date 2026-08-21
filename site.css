@@ -269,6 +269,27 @@ th {
   font-size: 13px;
 }
 
+.site-partners {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+}
+
+.site-partners-label {
+  color: var(--muted);
+  font-weight: 750;
+}
+
+.site-partners a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .plugin-hero h1 { max-width: 900px; }
 
 .plugin-principles {
