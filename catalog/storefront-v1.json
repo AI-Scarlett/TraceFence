@@ -4255,10 +4255,10 @@
       "package": {
         "bundleIdentifier": "com.tracefence.plugin.agent-profile",
         "entryPoint": "AgentProfile.bundle",
-        "sha256": "ac0a3b4d0fdb10a7d16062c8e4ce083e93e7da628a10b806b082c96d034eeac2",
-        "sizeBytes": 430954,
+        "sha256": "b00f2aca21769ca1688abaa123c57b32fdbae85881968b421b0b7c6c5dc410bb",
+        "sizeBytes": 431947,
         "teamIdentifier": "UQ87N2WZ76",
-        "url": "https://github.com/AI-Scarlett/TraceFence/releases/download/plugin-agent-profile-v1.0.1/agent-profile-1.0.1.mactoolsplugin.zip"
+        "url": "https://github.com/AI-Scarlett/TraceFence/releases/download/plugin-agent-profile-v1.0.2/agent-profile-1.0.2.mactoolsplugin.zip"
       },
       "permissions": [],
       "placements": {
@@ -4275,10 +4275,10 @@
       "summary": "Manage agent locale, timezone, proxy egress, and privacy diagnostics while keeping local profile state separate from provider account eligibility",
       "systemImage": "globe.badge.chevron.backward",
       "trialHours": null,
-      "version": "1.0.1"
+      "version": "1.0.2"
     }
   ],
   "publishedAt": "2026-08-30T16:51:47Z",
-  "revision": 27,
+  "revision": 28,
   "schemaVersion": 1
 }
