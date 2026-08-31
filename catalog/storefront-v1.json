@@ -4255,8 +4255,8 @@
       "package": {
         "bundleIdentifier": "com.tracefence.plugin.agent-profile",
         "entryPoint": "AgentProfile.bundle",
-        "sha256": "d0bc4239684c4bcb657dbf92b43788abd0ca69dba70cf865e631fed233ed1238",
-        "sizeBytes": 444967,
+        "sha256": "ac0a3b4d0fdb10a7d16062c8e4ce083e93e7da628a10b806b082c96d034eeac2",
+        "sizeBytes": 430954,
         "teamIdentifier": "UQ87N2WZ76",
         "url": "https://github.com/AI-Scarlett/TraceFence/releases/download/plugin-agent-profile-v1.0.1/agent-profile-1.0.1.mactoolsplugin.zip"
       },
@@ -4279,6 +4279,6 @@
     }
   ],
   "publishedAt": "2026-08-30T16:51:47Z",
-  "revision": 26,
+  "revision": 27,
   "schemaVersion": 1
 }
