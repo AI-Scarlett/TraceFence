@@ -1,6 +1,6 @@
 {
   "businessID": "bus_0Nj3ve514BLr8z2wT3duj",
-  "expiresAt": "2027-08-31T00:40:14Z",
+  "expiresAt": "2027-08-31T00:47:09Z",
   "offers": [
     {
       "active": true,
@@ -4255,10 +4255,10 @@
       "package": {
         "bundleIdentifier": "com.tracefence.plugin.agent-profile",
         "entryPoint": "AgentProfile.bundle",
-        "sha256": "05d5d45aa21b446340e8acd44802f80e85802d54eb6ffc5323c2a07f82f990c3",
-        "sizeBytes": 543433,
+        "sha256": "d6e88cb35fb1d7aeafbf952fd90734113849a9bfedd614eaf75cb3af3a44e411",
+        "sizeBytes": 545020,
         "teamIdentifier": "UQ87N2WZ76",
-        "url": "https://github.com/AI-Scarlett/TraceFence/releases/download/plugin-agent-profile-v1.1.0/agent-profile-1.1.0.mactoolsplugin.zip"
+        "url": "https://github.com/AI-Scarlett/TraceFence/releases/download/plugin-agent-profile-v1.1.1/agent-profile-1.1.1.mactoolsplugin.zip"
       },
       "permissions": [],
       "placements": {
@@ -4275,10 +4275,10 @@
       "summary": "Create one locale, timezone, location, proxy, launcher, and privacy profile for Codex, Claude, Grok, Gemini, Antigravity, DSH, and other agents",
       "systemImage": "globe.badge.chevron.backward",
       "trialHours": null,
-      "version": "1.1.0"
+      "version": "1.1.1"
     }
   ],
-  "publishedAt": "2026-08-31T00:40:14Z",
-  "revision": 29,
+  "publishedAt": "2026-08-31T00:47:09Z",
+  "revision": 30,
   "schemaVersion": 1
 }
